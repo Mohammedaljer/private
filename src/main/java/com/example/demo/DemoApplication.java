@@ -54,9 +54,6 @@ public class DemoApplication {
         	JsonNode jsonNodeJohn = createJsonNode(objectMapper, "john@gmail.com");
             Customer customerJohn = new Customer(null, "John", "Doe", jsonNodeJohn);
             
-            JsonNode jsonNodeJohn = createJsonNode(objectMapper, "john2@gmail.com");
-            Customer customerJohn = new Customer(null, "Webhook", "jenkins", jsonNodeWebhook);
-            
             JsonNode jsonNodeMo = createJsonNode(objectMapper, "mog@out.com");
             Customer customerMo = new Customer(null, "Mo", "J", jsonNodeMo);
 
