@@ -1,0 +1,34 @@
+spring:
+  config:
+    activate:
+      on-profile: h2
+  r2dbc:
+    url: r2dbc:h2:mem:///h2db
+    username: sa
+    password:
+
+          
+---
+
+spring:
+  config:
+    activate:
+      on-profile: mariadb
+  r2dbc:
+    url: r2dbc:mariadb://127.0.0.1:3307/test?allowPublicKeyRetrieval=true
+    username: root
+    password: 54321852
+   
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: postgres
+  r2dbc:
+    url: r2dbc:postgresql://127.0.0.1:5432/postgres
+    username: postgres
+    password: 54321852
+    
+    
